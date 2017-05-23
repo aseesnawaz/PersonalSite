@@ -1,19 +1,19 @@
 // Alert box using SweetAlert2 - https://limonte.github.io/sweetalert2
 $(document).ready(function() {
+
 	// Variables
 	var holding = [],
 		moves,
 		disksNum = 7,
 		minMoves = 127,
-		$game = $('#game'),
-		$canves = $game.find('#canves'),
+		$canves = $('#canves'),
 		$restart = $canves.find('.restart'),
 		$tower = $canves.find('.tower'),
 		$scorePanel = $canves.find('#score-panel'),
 		$movesCount = $scorePanel.find('#moves-num'),
 		$ratingStars = $scorePanel.find('i'),
 		rating = 3;
-
+	
 	// Set Rating and final Score
 	function setRating(moves) {
 		if (moves === 127) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
 		} else if (moves >= 229) {
 			$ratingStars.eq(0).removeClass('fa-star').addClass('fa-star-o');
 			rating = 0;
-		}
+		}	
 		return { score: rating };
 	};
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
 				})
 			}
 		}
-
+		
 		setRating(moves);
 	}
 
@@ -88,15 +88,15 @@ $(document).ready(function() {
 			holding[0] = topDiskValue;
 		}
 	}
-
+	
 	initGame($tower.eq(0));
-
+	
 	// Event Handlers
 	$canves.on('click', '.tower', function() {
 		var $this = $(this);
 		tower($this);
 	});
-
+	
 	$restart.on('click', function() {
 		swal({
 				allowEscapeKey: false,

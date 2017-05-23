@@ -4,12 +4,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
     <script type="text/javascript" src="js/script.js"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Coda'>
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/sweetalert2/3.0.3/sweetalert2.min.css'>
     <title>Asees Nawaz</title>
   </head>
   <body>
+
     <div class="main">
       <nav class="menu">
         <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
@@ -20,10 +24,10 @@
         </label>
 
         <a href="#" class="menu-item" title="Back to top"> <i class="fa fa-arrow-circle-up"></i></a>
-        <a href="#contact" class="menu-item" title="Contact Info"> <i class="fa fa-address-card"></i> </a>
-        <a href="#skills" class="menu-item" title="Skills" style="text-decoration:none;"> skills</a>
-        <a href="#projects" class="menu-item" title="Projects" style="text-decoration:none;">projects</a>
-        <a href="#about" class="menu-item" title="About Me"> <i class="fa fa-user-o"></i> </a>
+        <a href="#contact" class="menu-item" title="Contact Info" style="text-decoration:none;">Contact</a>
+        <a href="#skills" class="menu-item" title="Skills" style="text-decoration:none;">Skills</a>
+        <a href="#projects" class="menu-item" title="Projects" style="text-decoration:none;">Projects</a>
+        <a href="#about" class="menu-item" title="About Me" style="text-decoration:none;">About</a>
 
       </nav>
       <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -90,16 +94,14 @@
        </main><br>
         <br><i class="heading" align='center'>A Brief History</i>
         <p class="history" style="font-size: 16px">
-
-          I am a <b>web developer</b> with experience in <b>Ruby on Rails</b>, <b>JavaScript</b> and <b>React.js</b>. I'm passionate about problem-solving, debugging, and writing clean, semantic code. I have also coded in <b>C++</b> and <b>Python</b> and I love working on a team and pair programming.
+          I am a <b>web developer</b> with experience in <b>Ruby on Rails</b>, <b>JavaScript</b> and <b>React.js</b>. I'm passionate about problem-solving, debugging, and writing clean, semantic code. I have coded in <b>C++</b> and <b>Python</b> and I love working on a team and pair programming.
 <br>I am always looking for more opportunities to delve into new languages, frameworks or mathematical concepts.
-When not developing amazing apps, I love to solve and code complex algorithms and try to find better solutions.
-<br><br>
-<i>Thank you for visiting my profile and I look forward to hearing from you!</i>
+When not developing amazing apps, I like to solve and code complex algorithms and try to find better solutions. I love creating software that is attractive and responsive.
+<br>
+  <br><i align='center'>Please check out my projects below!</i>
         </p>
       </div>
     </div>
-
 
     <div id="projects">
       <h2 style="margin-left:10px;">Projects</h2>
@@ -144,7 +146,7 @@ When not developing amazing apps, I love to solve and code complex algorithms an
 
              <a href="https://github.com/aseesnawaz/Twitter_Python" class="flex-item">
                  <figure class="i2" style="background-image:url(img/tweepy.png); background-repeat: no-repeat; background-position: center; background-size: 55%;">
-                     <figcaption>TwitPy - Hashtags Traker <br>
+                     <figcaption>TwitPy - Hashtags Tracker <br>
                      <i>Tweepy, Python, Vega, JavaScript</i></figcaption>
                  </figure>
              </a>
@@ -160,6 +162,24 @@ When not developing amazing apps, I love to solve and code complex algorithms an
 
          </section>
         </main>
+      </div>
+    </div>
+    <h3 style="text-align:center"><i>Got a few minutes?? Check out this Tower of Hanoi game :)</i></h3>
+    <div id="game">
+      <div id="canves">
+        <div class="restart"><i class="fa fa-repeat"></i></div>
+        <div class="curtain"></div>
+        <ul id="score-panel">
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li><i class="fa fa-star"></i></li>
+          <li>
+            <h1> <span id="moves-num"></span><span> Moves</span></h1>
+          </li>
+        </ul>
+        <ul class="tower" id="tower-1"></ul>
+        <ul class="tower" id="tower-2"></ul>
+        <ul class="tower" id="tower-3"></ul>
       </div>
     </div>
 
@@ -220,10 +240,17 @@ When not developing amazing apps, I love to solve and code complex algorithms an
         <a href="mailto:aseesnawaz01@gmail.com"><i class="fa fa-envelope" style="color:black"> Aseesnawaz01@gmail.com</i></a><br><br>
         <a href="https://github.com/aseesnawaz"><i class="fa fa-github"> aseesnawaz</i></a><br><br>
         <a href="https://www.linkedin.com/in/asees-nawaz-7005096b/"><i class="fa fa-linkedin"> asees-nawaz</i></a><br><br>
-        <a class="download-link" href=AseesNawaz.docx style="margin-left:auto;">Resume</a>
+        <a class="download-link" href=AseesNawaz.docx style="margin-left:auto;">Resume</a><br>
+
       </div>
+<i align='center'>Thank you for visiting my profile and I look forward to hearing from you!</i>
     </div>
   </div>
   <div class="footer">&copy; 2017 aseesnawaz.com</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/sweetalert2/3.0.3/sweetalert2.min.js'></script>
+  <script src="js/index.js"></script>
+
+
   </body>
 </html>
